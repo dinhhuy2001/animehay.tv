@@ -18,6 +18,9 @@ body {
   background-size: contain;
 }
 
+.red {
+  background-color: #883636 !important;
+}
 #wrapper {
   width: 1050px;
   margin: 0 auto;
@@ -160,41 +163,39 @@ body {
 
 #slider .slider-outer .slider-inner {
   width: 4700px;
-  padding: 0 50px;
 }
 
 #slider .slider-outer .slider-item {
   width: 220px;
   margin-right: 10px;
   display: inline-block;
+  position: relative;
 }
 
 #slider .slider-outer img {
-  width: 220px;
+  width: 100%;
   height: 270px;
   cursor: pointer;
 }
 
-#slider .slider-outer img:hover {
-  opacity: 0.7;
-}
-
-.slider-transfer {
-  margin-top: 6px;
+.name {
+  position: absolute;
+  z-index: 100;
+  background: linear-gradient( 0deg,rgb(0 0 0/50%) 0%,rgb(25 25 25/50%) 28%,rgb(37 37 37/0%) 78% );
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
   text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 5px;
+  padding: 10px;
+  color: #fff;
+  font-weight: 700;
 }
 
-.slider-transfer button {
-  display: inline-block;
-  margin: 5px 7px;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 8px;
-  border: none;
-}
-
-.slider-transfer button:hover {
-  background-color: #869791;
+#slider .slider-item:hover  {
+  opacity: 0.7;
 }
 
 .header-btn {
@@ -241,7 +242,7 @@ body {
 
 .movies_item img {
   width: 100%;
-  height: 240px;
+  height: 235px;
   display: block;
   cursor: pointer;
 }
@@ -260,6 +261,28 @@ body {
   letter-spacing: 1px;
   margin-top: 5px;
   text-align: center;
+}
+
+.score {
+  position: absolute;
+  right: 10px;
+  bottom: 37px;
+  padding: 5px 10px;
+  background-color: #903a3a;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.name_movie {
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 5px;
+  padding: 3px 5px;
+  color: #cc8d4c;
+  font-weight: 700;
 }
 
 .movies_item:hover {
@@ -605,5 +628,25 @@ a {
   border: none;
   outline: none;
 }
+
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #869791 !important;
+  opacity: 1;
+}
+/* target all bullets */
+.swiper-pagination span {
+  background-color: #D6D6D6;
+  opacity: 1;
+  margin: 5px 7px !important;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination span:hover {
+  background-color: #869791 !important;
+}
+
 
 

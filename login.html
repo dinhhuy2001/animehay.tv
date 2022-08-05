@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-signin-client_id"
-      content="YOUR_CLIENT_ID.apps.googleusercontent.com"
-    />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <link
@@ -134,7 +130,7 @@
           </div>
         </div>
         <div class="header-1_login">
-          <div class="login_gg">
+          <div class="login_gg" data-onsuccess="onSignIn">
             <div class="gg_img">
               <div class="img_container">
                 <div class="img_main">
@@ -181,12 +177,5 @@
       </div>
     </div>
     <script src="./main.js"></script>
-    <script>
-      const loginBtn = document.querySelector(".loginBtn");
-      loginBtn.addEventListener("click", function () {
-        window.location.replace("./index.html");
-      });
-      console.log(loginBtn);
-    </script>
   </body>
 </html>
